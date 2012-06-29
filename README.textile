@@ -1,0 +1,19 @@
+h1. American Express Open Forum Gem
+
+"Open Forum":http://developer.openforum.com/ is a site that offers content about Small Business.
+It is associated with American Express's OPEN CARD - a credit card used by Small Business Owners.
+
+h2. The Gem
+
+This is gem uses "httparty":https://github.com/jnunemaker/httparty and "crack":https://github.com/jnunemaker/crack
+to wrap calls to open forum.
+
+h2. Usage
+
+...usage example here...
+
+h2. Resources
+
+...URL TO Open Forum Documentation
+...URL TO HTTParty
+...URL TO Crack
