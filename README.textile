@@ -5,8 +5,7 @@ It is associated with American Express's OPEN CARD - a credit card used by Small
 
 h2. The Gem
 
-This is gem uses "httparty":https://github.com/jnunemaker/httparty and "crack":https://github.com/jnunemaker/crack
-to wrap calls to open forum.
+This is gem uses "httparty":https://github.com/jnunemaker/httparty and "crack":https://github.com/jnunemaker/crack to wrap calls to open forum.
 
 h2. Usage
 
