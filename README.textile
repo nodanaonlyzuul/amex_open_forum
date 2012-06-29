@@ -7,6 +7,10 @@ h2. The Gem
 
 This is gem uses "httparty":https://github.com/jnunemaker/httparty and "crack":https://github.com/jnunemaker/crack to wrap calls to open forum.
 
+h2. Installation
+
+...installation example here...
+
 h2. Usage
 
 ...usage example here...
