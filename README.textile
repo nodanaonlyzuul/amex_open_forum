@@ -29,6 +29,17 @@ h3. Making Arbitrary Requests
 Since the gem mixes HTTParty into your class for you - you can call HTTParty methods like
 bc. MyAmexAPI.get("/arbitrary/path")
 
+h3. XML makes ugly method names
+
+The beauty of HTTParty's parser is - it translates XML responses into a nice hash.
+The beauty of OpenCascade is - it translates that hash into methods.
+Open Forum's API responds with (surprise!) XML with leading-capitalized nodes - so out-of-the-box, you're methods
+would look like @api.most_recent.ReturnItems.Content@...urf!
+
+AmexOpenForum (ab)uses @method_missing@, allowing you to call underscorized versions of those node names.
+so you could respect the XML's capitalization and call @api.most_recent.ReturnItems.Content@ OR
+give your eyes a break and call @api.most_recent.return_items.content@
+
 h2. Additional Resources
 
 * "Open Forum API Documentation":http://developer.openforum.com/
