@@ -29,7 +29,7 @@ h3. Making Arbitrary Requests
 Since the gem mixes HTTParty into your class for you - you can call HTTParty methods like
 bc. MyAmexAPI.get("/arbitrary/path")
 
-h3. XML => Ugly Method Names
+h3. XML maketh Ugly Method Names
 
 The beauty of HTTParty's parser is - it translates XML responses into a nice hash.
 The beauty of OpenCascade is - it translates that hash into methods.
