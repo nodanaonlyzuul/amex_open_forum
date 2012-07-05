@@ -6,7 +6,7 @@ It is associated with American Express's OPEN CARD - a credit card used by Small
 h2. The Gem
 
 This is gem uses "httparty":https://github.com/jnunemaker/httparty to wrap calls to open forum.
-It then uses "hashery's":http://rubyworks.github.com/hashery "OpenCascade":https://github.com/rubyworks/hashery class to turn the API's hash response into callable methods.
+It then uses "hashery's":http://rubyworks.github.com/hashery @OpenCascade@ class to turn the API's hash response into callable methods.
 
 h2. Installation
 
