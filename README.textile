@@ -18,6 +18,6 @@ h2. Usage
 
 h2. Resources
 
-* *"Open Forum API Documentation":http://developer.openforum.com/
-* *"URL TO HTTParty":https://github.com/jnunemaker/httparty
+* "Open Forum API Documentation":http://developer.openforum.com/
+* "URL TO HTTParty":https://github.com/jnunemaker/httparty
 * Hashery ("github":https://github.com/rubyworks/hashery, "homepage":http://rubyworks.github.com/hashery/)
