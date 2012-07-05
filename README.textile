@@ -15,7 +15,7 @@ h3. Adding AmexOpenForum Into Your Class
 bc. require 'amex_open_forum'
 class MyAmexAPI
   include AmexOpenForum
-  open_forum_api_key "vyxafsxf77vdqc8598n633fm"
+  open_forum_api_key "YOURKEYHERE"
 end
 
 h3. Making Requests to the API
