@@ -7,7 +7,7 @@ $spec = Gem::Specification.new do |s|
   s.email    = ['stephen@eastmedia.com']
   s.homepage = 'https://github.com/nodanaonlyzuul'
 
-  s.add_dependency('httparty', '0.8.3')
+  # s.add_dependency('httparty', '0.8.3')
 
   s.files = Dir['lib/**/*']
   s.rubyforge_project = 'nowarning'

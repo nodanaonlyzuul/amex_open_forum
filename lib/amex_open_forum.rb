@@ -1,6 +1,7 @@
 module AmexOpenForum
   require 'httparty'
   require 'crack'
+  require 'open_forum_response'
 
   module ClassMethods
     def open_forum_api_key(key)
@@ -12,17 +13,21 @@ module AmexOpenForum
     base.send(:include, HTTParty)
     base.base_uri "api.openforum.com"
     base.extend(ClassMethods)
-    base.parser(
-      Proc.new do |body, format|
-        Crack::XML.parse(body)
-      end
-    )
   end
 
   attr_accessor :open_forum_api_key
 
   def most_recent(options = {})
-    @most_recent ||= self.class.get("/v1/summaries/most-recent", :query => build_query(options))
+
+    unless @most_recent
+      @most_recent          = OpenForumResponse.new
+      @most_recent.key_proc = Proc.new { |key| key.to_sym }
+      returned_hash         = (self.class.get("/v1/summaries/most-recent", :query => build_query(options))["EntityListOfContent"])
+
+      returned_hash.each { |key, value| @most_recent[key] = value}
+    end
+
+    @most_recent
   end
 
   def most_viewed(options = {})
