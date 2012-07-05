@@ -8,10 +8,6 @@ h2. The Gem
 This is gem uses "httparty":https://github.com/jnunemaker/httparty to wrap calls to open forum.
 It then uses "hashery's":http://rubyworks.github.com/hashery @OpenCascade@ class to turn the API's hash response into callable methods.
 
-h2. Installation
-
-...installation example here...
-
 h2. Usage
 
 h3. Adding AmexOpenForum Into Your Class
