@@ -14,9 +14,27 @@ h2. Installation
 
 h2. Usage
 
-...usage example here...
+h3. Adding AmexOpenForum Into Your Class
 
-h2. Resources
+bc. require 'amex_open_forum'
+
+bc. class MyAmexAPI
+  include AmexOpenForum
+  open_forum_api_key "vyxafsxf77vdqc8598n633fm"
+end
+
+h3. Making Requests to the API
+
+bc. api = MyAmexAPI.new
+    api.most_recent
+   #=> {:Success=>"true", :ReturnItems=>{"Content"=>[{"Title"=>"Why LEDs Are a Vital Business Upgrade", "TeaserText"=>"How...}
+
+h3. Making Arbitrary Requests
+
+Since the gem mixes HTTParty into your class for you - you can call HTTParty methods like
+bc. MyAmexAPI.get("/arbitrary/path")
+
+h2. Additional Resources
 
 * "Open Forum API Documentation":http://developer.openforum.com/
 * "URL TO HTTParty":https://github.com/jnunemaker/httparty
