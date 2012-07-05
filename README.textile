@@ -13,8 +13,7 @@ h2. Usage
 h3. Adding AmexOpenForum Into Your Class
 
 bc. require 'amex_open_forum'
-
-bc. class MyAmexAPI
+class MyAmexAPI
   include AmexOpenForum
   open_forum_api_key "vyxafsxf77vdqc8598n633fm"
 end
