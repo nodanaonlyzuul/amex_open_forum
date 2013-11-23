@@ -1,3 +1,5 @@
+This originated at eastmedia/amex_open_forum. _in pace requiescat_
+
 h1. American Express Open Forum Gem
 
 "Open Forum":http://developer.openforum.com/ is a site that offers content about Small Business.
